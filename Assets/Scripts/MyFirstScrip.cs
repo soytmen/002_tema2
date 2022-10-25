@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MyFirstScrip : MonoBehaviour
-{
+{/*
     public int playerAge = 33;
     private float playerSpeed = 3.125f;
     public string playerName = "Miguel";
@@ -19,10 +19,12 @@ public class MyFirstScrip : MonoBehaviour
     public int number2;
     public bool isOfLegalAge;
     public bool hasMoney;
-    
+    */
+    public Vector3 initialPos = new Vector3(1, 1, 1);
 
     private void Start()
     {
+        /*
         Debug.Log(message);
         Debug.Log(points);
         Debug.Log($"Tengo {points} puntos");
@@ -55,8 +57,9 @@ public class MyFirstScrip : MonoBehaviour
         {
             Debug.Log("no puedes entrar");
         }
+        */
 
-
+        transform.position = initialPos
 
     }
 
