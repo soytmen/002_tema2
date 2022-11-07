@@ -9,8 +9,9 @@ public class Vehicle : MonoBehaviour
     [SerializeField] private bool isOn;
     [SerializeField] private float gasoline;
     public string sound;
-
-    private void Start()
+    public bool canGetBigger;
+    
+   /* private void Start()
     {
         Debug.Log(string.Format("El {0} tienes {1} ruedas", name, wheels));
         if (isOn == true)
@@ -45,5 +46,12 @@ public class Vehicle : MonoBehaviour
         }
 
     }
-
+    */
+    private void Update()
+    {
+        if (canGetBigger == true && Input.GetMouseButtonDown(0))
+        {
+            transform.localScale += Vector3.one;
+        }
+    }
 }

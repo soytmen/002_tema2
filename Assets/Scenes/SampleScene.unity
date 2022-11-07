@@ -1208,6 +1208,7 @@ MonoBehaviour:
   isOn: 0
   gasoline: 33.9
   sound: 
+  canGetBigger: 0
 --- !u!4 &1291774765
 Transform:
   m_ObjectHideFlags: 0
@@ -1258,17 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2048bb2380daaf943aaeb1e5d51c20fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAge: 33
-  playerName: Miguel
-  gameOver: 0
-  message: Hola mundo
-  points: 256
-  isRaining: 1
-  number: 0
-  number1: 0
-  number2: 0
-  isOfLegalAge: 0
-  hasMoney: 0
+  initialPos: {x: 1, y: 1, z: 1}
 --- !u!65 &1358291916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1340,7 +1331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358291914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.05, y: -0.48932788, z: -5.58723}
+  m_LocalPosition: {x: 17.05, y: 0.23, z: -4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1478,6 +1469,7 @@ MonoBehaviour:
   isOn: 1
   gasoline: 8.25
   sound: Brum Brum
+  canGetBigger: 1
 --- !u!4 &1492873335
 Transform:
   m_ObjectHideFlags: 0
@@ -1532,6 +1524,7 @@ MonoBehaviour:
   isOn: 1
   gasoline: 49.75
   sound: 
+  canGetBigger: 0
 --- !u!4 &1562898606
 Transform:
   m_ObjectHideFlags: 0
@@ -2085,14 +2078,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2048bb2380daaf943aaeb1e5d51c20fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAge: 33
-  playerName: Miguel
-  gameOver: 0
-  message: Hola mundo
-  points: 256
-  isRaining: 1
-  number: 0
-  number1: 0
-  number2: 0
-  isOfLegalAge: 0
-  hasMoney: 0
+  initialPos: {x: 1, y: 1, z: 1}

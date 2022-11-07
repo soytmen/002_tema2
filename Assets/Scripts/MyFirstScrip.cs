@@ -20,7 +20,7 @@ public class MyFirstScrip : MonoBehaviour
     public bool isOfLegalAge;
     public bool hasMoney;
     */
-    public Vector3 initialPos = new Vector3(1, 1, 1);
+    public Vector3 initialPos = new Vector3 (1, 1, 1);
 
     private void Start()
     {
@@ -59,12 +59,21 @@ public class MyFirstScrip : MonoBehaviour
         }
         */
 
-        transform.position = initialPos
+        transform.position = initialPos;
+        transform.position += Vector3.up;
+        transform.position += Vector3.up;
+        transform.position += Vector3.up;
+        transform.position += Vector3.up;
+        transform.position += Vector3.up;
 
+    }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)){
+            transform.position += Vector3.up;
+        }
     }
 
 
-
-   
 
 }
